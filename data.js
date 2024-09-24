@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1727177647528,
+  "lastUpdate": 1727177735484,
   "repoUrl": "https://github.com/Breus/json-masker",
   "entries": {
     "JMH Benchmark": [
@@ -17196,6 +17196,268 @@ window.BENCHMARK_DATA = {
           {
             "name": "dev.blaauwendraad.masker.json.LargeKeySetInstanceCreationBenchmark.jsonMasker ( {\"keyLength\":\"1000\",\"numberOfTargetKeys\":\"1000\"} )",
             "value": 2.100327812392431,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Artur Havliukovskyi",
+            "username": "gavlyukovskiy",
+            "email": "agavlyukovskiy@gmail.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "5ed1e110f48dedaaab35615f03c2f2f5a4c2271b",
+          "message": "Make sure that all masks are JSON encoded (#133)",
+          "timestamp": "2024-04-17T09:03:19Z",
+          "url": "https://github.com/Breus/json-masker/commit/5ed1e110f48dedaaab35615f03c2f2f5a4c2271b"
+        },
+        "date": 1727177735195,
+        "tool": "jmh",
+        "benches": [
+          {
+            "name": "dev.blaauwendraad.masker.json.BaselineBenchmark.countBytes ( {\"characters\":\"unicode\",\"jsonSize\":\"1kb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 2598366.3150472455,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.BaselineBenchmark.countBytes ( {\"characters\":\"unicode\",\"jsonSize\":\"32kb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 82668.11986341768,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.BaselineBenchmark.countBytes ( {\"characters\":\"unicode\",\"jsonSize\":\"1mb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 3042.870257221631,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.BaselineBenchmark.jacksonParseAndMask ( {\"characters\":\"unicode\",\"jsonSize\":\"1kb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 29838.94033903311,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.BaselineBenchmark.jacksonParseAndMask ( {\"characters\":\"unicode\",\"jsonSize\":\"32kb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 791.9188710153766,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.BaselineBenchmark.jacksonParseAndMask ( {\"characters\":\"unicode\",\"jsonSize\":\"1mb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 18.441064784323174,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.BaselineBenchmark.jacksonParseOnly ( {\"characters\":\"unicode\",\"jsonSize\":\"1kb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 50940.99817448337,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.BaselineBenchmark.jacksonParseOnly ( {\"characters\":\"unicode\",\"jsonSize\":\"32kb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 1307.8639798994968,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.BaselineBenchmark.jacksonParseOnly ( {\"characters\":\"unicode\",\"jsonSize\":\"1mb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 27.277007563721085,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.BaselineBenchmark.regexReplace ( {\"characters\":\"unicode\",\"jsonSize\":\"1kb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 5321.440185018917,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.BaselineBenchmark.regexReplace ( {\"characters\":\"unicode\",\"jsonSize\":\"32kb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 156.56563643101654,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.BaselineBenchmark.regexReplace ( {\"characters\":\"unicode\",\"jsonSize\":\"1mb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 4.0752985683952625,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.BaselineBenchmark.writeFile ( {\"characters\":\"unicode\",\"jsonSize\":\"1kb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 5242.556443668509,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.BaselineBenchmark.writeFile ( {\"characters\":\"unicode\",\"jsonSize\":\"32kb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 2776.875560310715,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.BaselineBenchmark.writeFile ( {\"characters\":\"unicode\",\"jsonSize\":\"1mb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 171.16163415473477,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.InstanceCreationBenchmark.jsonMasker ( {\"numberOfTargetKeys\":\"10\"} )",
+            "value": 87461.38496658012,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.InstanceCreationBenchmark.jsonMasker ( {\"numberOfTargetKeys\":\"500\"} )",
+            "value": 3077.750894439477,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.InstanceCreationBenchmark.jsonMasker ( {\"numberOfTargetKeys\":\"2385\"} )",
+            "value": 803.7340731634821,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.JsonMaskerBenchmark.jsonMaskerBytes ( {\"characters\":\"unicode\",\"jsonPath\":\"false\",\"jsonSize\":\"1kb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 387157.6098932973,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.JsonMaskerBenchmark.jsonMaskerBytes ( {\"characters\":\"unicode\",\"jsonPath\":\"false\",\"jsonSize\":\"32kb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 15801.877189031278,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.JsonMaskerBenchmark.jsonMaskerBytes ( {\"characters\":\"unicode\",\"jsonPath\":\"false\",\"jsonSize\":\"1mb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 251.284172928684,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.JsonMaskerBenchmark.jsonMaskerBytes ( {\"characters\":\"unicode\",\"jsonPath\":\"true\",\"jsonSize\":\"1kb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 558755.7242622793,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.JsonMaskerBenchmark.jsonMaskerBytes ( {\"characters\":\"unicode\",\"jsonPath\":\"true\",\"jsonSize\":\"1mb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 261.6522629048001,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.JsonMaskerBenchmark.jsonMaskerString ( {\"characters\":\"unicode\",\"jsonPath\":\"false\",\"jsonSize\":\"1kb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 233911.42029636085,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.JsonMaskerBenchmark.jsonMaskerString ( {\"characters\":\"unicode\",\"jsonPath\":\"false\",\"jsonSize\":\"32kb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 6745.25696802411,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.JsonMaskerBenchmark.jsonMaskerString ( {\"characters\":\"unicode\",\"jsonPath\":\"false\",\"jsonSize\":\"1mb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 134.71954566647094,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.JsonMaskerBenchmark.jsonMaskerString ( {\"characters\":\"unicode\",\"jsonPath\":\"true\",\"jsonSize\":\"1kb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 248699.27568528053,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.JsonMaskerBenchmark.jsonMaskerString ( {\"characters\":\"unicode\",\"jsonPath\":\"true\",\"jsonSize\":\"1mb\",\"maskedKeyProbability\":\"0.1\"} )",
+            "value": 135.80168557563442,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.KeyMatcherBenchmark.matchAllKeys ( {\"caseSensitive\":\"false\",\"mode\":\"mask\"} )",
+            "value": 10916293.915371059,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.KeyMatcherBenchmark.matchAllKeys ( {\"caseSensitive\":\"false\",\"mode\":\"allow\"} )",
+            "value": 10998380.618269043,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.KeyMatcherBenchmark.matchAllKeys ( {\"caseSensitive\":\"true\",\"mode\":\"mask\"} )",
+            "value": 7993656.813906196,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.KeyMatcherBenchmark.matchAllKeys ( {\"caseSensitive\":\"true\",\"mode\":\"allow\"} )",
+            "value": 8112427.750473455,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.LargeKeySetInstanceCreationBenchmark.jsonMasker ( {\"keyLength\":\"10\",\"numberOfTargetKeys\":\"100\"} )",
+            "value": 9883.433127653057,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.LargeKeySetInstanceCreationBenchmark.jsonMasker ( {\"keyLength\":\"10\",\"numberOfTargetKeys\":\"1000\"} )",
+            "value": 835.951135207889,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.LargeKeySetInstanceCreationBenchmark.jsonMasker ( {\"keyLength\":\"10\",\"numberOfTargetKeys\":\"10000\"} )",
+            "value": 74.99705171733375,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.LargeKeySetInstanceCreationBenchmark.jsonMasker ( {\"keyLength\":\"100\",\"numberOfTargetKeys\":\"100\"} )",
+            "value": 1032.4799982386867,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.LargeKeySetInstanceCreationBenchmark.jsonMasker ( {\"keyLength\":\"100\",\"numberOfTargetKeys\":\"1000\"} )",
+            "value": 91.87904894947015,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.LargeKeySetInstanceCreationBenchmark.jsonMasker ( {\"keyLength\":\"100\",\"numberOfTargetKeys\":\"10000\"} )",
+            "value": 1.8163319091296601,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.LargeKeySetInstanceCreationBenchmark.jsonMasker ( {\"keyLength\":\"1000\",\"numberOfTargetKeys\":\"100\"} )",
+            "value": 105.18014129140545,
+            "unit": "ops/s",
+            "extra": "iterations: 3\nforks: 1\nthreads: 1"
+          },
+          {
+            "name": "dev.blaauwendraad.masker.json.LargeKeySetInstanceCreationBenchmark.jsonMasker ( {\"keyLength\":\"1000\",\"numberOfTargetKeys\":\"1000\"} )",
+            "value": 1.8273979912369045,
             "unit": "ops/s",
             "extra": "iterations: 3\nforks: 1\nthreads: 1"
           }
